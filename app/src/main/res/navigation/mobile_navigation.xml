@@ -12,14 +12,23 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.consultancyappexercice.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_service"
+        android:name="com.example.consultancyappexercice.ui.service.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.consultancyappexercice.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_about"
+        android:name="com.example.consultancyappexercice.ui.about.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_customer"
+        android:name="com.example.consultancyappexercice.ui.customer.CustomerFragment"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
+    <fragment
+        android:id="@+id/nav_email"
+        android:name="com.example.consultancyappexercice.ui.contact.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

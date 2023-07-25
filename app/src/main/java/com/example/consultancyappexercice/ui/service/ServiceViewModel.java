@@ -1,16 +1,15 @@
-package com.example.consultancyappexercice.ui.gallery;
+package com.example.consultancyappexercice.ui.service;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
-
+public class ServiceViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ServiceViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("service");
     }
 
     public LiveData<String> getText() {
