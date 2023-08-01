@@ -1,5 +1,7 @@
 package com.example.consultancyappexercice;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -32,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                sendEmail();
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -47,6 +48,18 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    private void sendEmail() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"helpSDMT@consultancy.guri", "another etc"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "RAID PLZ");
+        intent.putExtra(Intent.EXTRA_TEXT, "HELP PLZ");
+
+        intent.setType("message/rfc822");
+
+        startActivity(Intent.createChooser(intent, "share"));
     }
 
     @Override
