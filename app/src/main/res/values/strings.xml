@@ -10,4 +10,5 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sollicitudin nunc. Integer sem dui, fringilla nec dolor id, imperdiet posuere justo. Ut pellentesque ligula urna, ut porttitor nisi convallis vel. Fusce faucibus neque semper, porttitor elit in, ornare dui. Sed rutrum consequat laoreet. Pellentesque sed accumsan mi. Quisque et vehicula tortor, ac porta urna. Praesent quis orci eu nisi pharetra fringilla in nec risus. Aliquam lacinia quis risus at tincidunt.</string>
 </resources>
